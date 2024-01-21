@@ -1,0 +1,86 @@
+.form-wrapper h1 {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  -webkit-animation: fadeIn 1s;
+}
+
+.form-item {
+  position: relative;
+  width: 400px;
+}
+
+.form-item #message {
+  height: 180px;
+}
+
+.form-item input,
+.form-item textarea {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--light-grey);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s;
+  outline: none;
+}
+
+.form-item span {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 15px;
+  background-color: var(--light-grey);
+  color: gray;
+  text-transform: uppercase;
+  transition: 0.3s;
+  letter-spacing: 0.2em;
+}
+
+.form-item input:valid ~ label span,
+.form-item input:focus ~ label span,
+.form-item textarea:valid ~ label span,
+.form-item textarea:focus ~ label span {
+  color: var(--accent-color);
+  background: white;
+  padding: 0 10px;
+  transform: translateX(-5px) translateY(-30px);
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.form-wrapper button {
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.form-wrapper button:hover {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

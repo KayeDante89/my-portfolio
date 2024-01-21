@@ -5,7 +5,7 @@ import Footer from './components/footer/Footer';
 
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
-import ContactPage from './pages/ContactPage';
+import ContactPage from './pages/contact-page/ContactPage';
 
 
 import './App.css'
