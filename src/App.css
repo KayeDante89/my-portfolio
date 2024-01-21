@@ -1,0 +1,157 @@
+:root {
+  --accent-color: #66879C;
+  --light-grey: #F5F5F5;
+	--bold: 700;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ALL PAGES */
+div.page-height {
+  height: 80vh;
+}
+
+/* MAIN PAGE */
+div#home-section {
+  background-color: var(--light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#about-section h1 {
+  text-align: center;
+}
+
+h1#greeting {
+  font-size: 50px;
+}
+
+.home-text-container {
+  width: 400px;
+  transform: translateX(37vw) translateY(-500px);
+  padding-left: 10px;
+}
+
+.profile-picture {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.profile-pic-container {
+  display: block;
+  height: 600px;
+  margin: 30px;
+  -webkit-animation: fadeIn 1s;
+}
+
+
+/* CONTACT FORM */
+.form-wrapper h1 {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  -webkit-animation: fadeIn 1s;
+}
+
+.form-item {
+  position: relative;
+  width: 400px;
+}
+
+.form-item #message {
+  height: 180px;
+}
+
+.form-item input,
+.form-item textarea {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--light-grey);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s;
+  outline: none;
+}
+
+.form-item span {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 15px;
+  background-color: var(--light-grey);
+  color: gray;
+  text-transform: uppercase;
+  transition: 0.3s;
+  letter-spacing: 0.2em;
+}
+
+.form-item input:valid ~ label span,
+.form-item input:focus ~ label span,
+.form-item textarea:valid ~ label span,
+.form-item textarea:focus ~ label span {
+  color: var(--accent-color);
+  background: white;
+  padding: 0 10px;
+  transform: translateX(-5px) translateY(-30px);
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+.form-wrapper button {
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+.form-wrapper button:hover {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* rotating logo effect */
+/* @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  } */
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */
