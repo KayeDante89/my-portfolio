@@ -9,14 +9,13 @@
   margin: 0 auto;
 }
 
-/* ALL PAGES */
 div.page-height {
   height: 80vh;
 }
 
-/* MAIN PAGE */
 div#home-section {
   background-color: var(--light-grey);
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,6 +60,7 @@ h1#greeting {
 }
 
 .profile-pic-container {
+  padding-top: 100px;
   display: block;
   height: 600px;
   margin: 30px;
