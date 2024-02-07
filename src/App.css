@@ -1,9 +1,6 @@
 div#home-section {
   background-color: var(--color-main-background);
   padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
 }
 
@@ -19,8 +16,24 @@ h1#greeting {
   padding-left: 10px;
 }
 
+.down-arrow { 
+  position: absolute;
+  /* width: calc(100vw - 1437px);   */
+  height: 0;  
+  border-left: calc(100vw - 200px) solid transparent; 
+  border-right: 200px solid var(--color-main-background); 
+  border-top: 65px solid var(--color-main-background); 
+  } 
+
+#project-section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+
 #project-section h1 {
   padding-top: 80px;
+  color: var(--color-jet-black)
 }
 
 /* rotating logo effect */

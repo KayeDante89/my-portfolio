@@ -5,9 +5,10 @@
 	margin: 0 auto;
 	position: sticky;
 	top: 0;
-	background-color: var(--color-light);
+	/* background-color: var(--color-light); */
 	padding: 20px;
 	height: 20px;
+	z-index: 9;
 }
 
 .nav-content-container {
@@ -20,10 +21,10 @@
 	text-decoration: none;
 	font-weight: var(--bold);
 	font-size: 21px;
-	color: var(--color-main-background);
+	color: var(--color-light);
 	text-transform: lowercase;
 	letter-spacing: 1.5px;
-	padding: 0px 20px;
+	padding: 0px 5px;
 
 }
 
@@ -39,6 +40,16 @@
 	height: 0;
 	overflow: hidden;
 	visibility: hidden;
+}
+
+.active {
+	font-size: 21px;
+	text-decoration: none;
+	font-weight: var(--bold);
+	color: var(--accent-color);
+	text-transform: lowercase;
+	letter-spacing: 1.5px;
+	padding: 0px 5px;
 }
 
 p {

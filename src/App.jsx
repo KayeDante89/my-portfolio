@@ -12,11 +12,11 @@ import './App.css'
 const Layout = () => {
 
   return (
-    <div>
+    <>
       <Nav/>
       <Outlet/>
       <Footer/>
-    </div>
+    </>
   );
 };
 

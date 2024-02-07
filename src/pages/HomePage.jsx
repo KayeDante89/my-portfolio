@@ -1,15 +1,23 @@
 export default function HomePage() {
   return (
     <div>
-      <div id="home-section" className="page-height">
-        <div>
-          <h1>Hi! I'm Kaye.</h1>
-          <h3>Junior Web Developer</h3>
+      <section id="home-section" className="page-height flex-center">
+        <div style={{ textAlign: "center" }}>
+          <h1
+            style={{
+              fontSize: "100px",
+              margin: "40px"
+            }}
+          >
+            Hi! I'm <span style={{ color: "#e5989b" }}>Kaye Dante.</span>
+          </h1>
+          <h2>Junior Web Developer | Front End Enthusiast</h2>
         </div>
-      </div>
-      <div id="project-section" className="page-height">
-        <h1>My Projects</h1>
-      </div>
+      </section>
+      <div className="down-arrow"></div>
+      <section id="project-section" className="page-height">
+        <h1>projects</h1>
+      </section>
     </div>
   );
 }

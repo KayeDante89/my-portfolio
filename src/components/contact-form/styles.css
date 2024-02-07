@@ -32,7 +32,7 @@ form {
   font-size: 18px;
   transition: 0.3s;
   outline: none;
-  color: var(--color-jet-black)
+  color: white;
 }
 
 .form-item span {
