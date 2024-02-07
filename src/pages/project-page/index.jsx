@@ -1,4 +1,4 @@
-import './ProjectPage.css'
+import './styles.css'
 
 export default function ProjectPage() {
 	return (

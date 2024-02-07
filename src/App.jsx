@@ -4,8 +4,8 @@ import Nav from './components/navbar/Nav'
 import Footer from './components/footer/Footer';
 
 import HomePage from './pages/HomePage';
-import ProjectPage from './pages/project-page/ProjectPage';
-import ContactPage from './pages/contact-page/ContactPage';
+import ProjectPage from './pages/project-page';
+import ContactPage from './pages/contact-page';
 
 
 import './App.css'
