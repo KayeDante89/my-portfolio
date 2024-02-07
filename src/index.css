@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;700&display=swap');
 
+html,body {
+  margin: 0px;
+  padding: 0;
+}
+
 :root {
+  --color-jet-black: #343434;
+  --color-main-background: #6D6875;
+  --accent-color: #b5838d;
+  --color-light: #F3DBCE;
+	--bold: 700;
+  --page-height: calc( 100vh - 50px );
   font-family: 'League Spartan', sans-serif;
 }
 
@@ -10,17 +21,21 @@ textarea, input {
   font-size: 100px;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}  */
+h1 {
+  color: var(--color-light);
+  font-size: 50px;
+}
 
+body {
+  background-color: var(--color-main-background);
+}
 
+.page-height {
+  height: var(--page-height);
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

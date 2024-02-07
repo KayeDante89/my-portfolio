@@ -1,11 +1,10 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
-import Nav from './components/navbar/Nav'
-import Footer from './components/footer/Footer';
+import Nav from './components/navbar'
+import Footer from './components/footer';
 
 import HomePage from './pages/HomePage';
-import ProjectPage from './pages/project-page';
-import ContactPage from './pages/contact-page';
+import ContactPage from './pages/ContactPage';
 
 
 import './App.css'
@@ -26,7 +25,6 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: "/", element: <HomePage /> },
-      { path: "/projects", element: <ProjectPage/>},
       { path: "/contact", element: <ContactPage/> }
     ],
   },
