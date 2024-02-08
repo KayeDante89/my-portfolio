@@ -1,3 +1,7 @@
+.form-wrapper {
+  -webkit-animation: fadeIn 1.5s;
+}
+
 .form-wrapper h1 {
   text-align: center;
 }
@@ -5,7 +9,6 @@
 form {
   flex-direction: column;
   gap: 40px;
-  -webkit-animation: fadeIn 1s;
 }
 
 #form-btn-container {

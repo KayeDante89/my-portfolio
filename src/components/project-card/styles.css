@@ -1,0 +1,16 @@
+img {
+  border-radius: 25px;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 18px;
+}
+
+.proj-img {
+  object-fit: cover;
+  width: 380px;
+  height: 260px;
+  border: 0.5 solid grey;
+  padding: 10px;
+}
+
+#proj-txt-container {
+  text-align: center;
+}

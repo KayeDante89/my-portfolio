@@ -14,14 +14,14 @@ export default function Nav() {
       <nav id="top-nav" className="nav-content-container">
         <HashLink
           title="home"
-          className='nav-menu-link'
+          className={location.pathname === '/' ? 'active' : 'nav-menu-link'}
           smooth
           to="/#top"
         >
           Home
         </HashLink>
         <HashLink
-          title="about"
+          title="projects"
           className='nav-menu-link'
           smooth
           to="/#project-section"

@@ -5,7 +5,6 @@
 	margin: 0 auto;
 	position: sticky;
 	top: 0;
-	/* background-color: var(--color-light); */
 	padding: 20px;
 	height: 20px;
 	z-index: 9;
@@ -19,7 +18,7 @@
 
 .nav-menu-link, #nav-logo-container p {
 	text-decoration: none;
-	font-weight: var(--bold);
+	font-weight: 400;
 	font-size: 21px;
 	color: var(--color-light);
 	text-transform: lowercase;
@@ -29,7 +28,7 @@
 }
 
 .nav-menu-link:hover {
-	font-weight: var(--bold);
+	font-weight: 700;
 	color: var(--accent-color)
 }
 

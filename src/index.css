@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  color: var(--color-jet-black)
+  color: var(--color-jet-black);
 }
 
 body {
