@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+/* LANDING PAGE - HOME */
+
 div#home-section {
   background-color: var(--color-main-background);
   padding: 10px;
@@ -10,36 +14,25 @@ div#home-section {
   right: 0px;
   z-index: -1;
   width: 100%;
+  text-align: center;
 }
 
 h1#greeting {
+  font-family: 'Song Myung', serif;
   margin-top: 160px;
   margin-bottom: 60px;
-  font-size: 140px;
+  font-size: 100px;
   color: var(--color-light);
   -webkit-animation: fadeIn 1.5s;
 }
 
-p {
-  color: var(--color-jet-black);
-  font-size: 22px;
-  margin-top: 10px;
-  line-height: 33px;  
+#greeting-sub-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home-text-container {
-  width: 400px;
-  transform: translateX(37vw) translateY(-500px);
-  padding-left: 10px;
-}
-
-.down-arrow { 
-  position: absolute;
-  height: 0;  
-  border-left: calc(100vw - 200px) solid transparent; 
-  border-right: 200px solid var(--color-main-background); 
-  border-top: 65px solid var(--color-main-background); 
-  } 
+/* PROJECT SECTION */
 
 #project-section {
   display: flex;
@@ -47,50 +40,88 @@ p {
   background-color: var(--color-light);
 }
 
-#project-section h1 {
-  color: var(--color-jet-black);
-  margin: 0;
-}
-
 #project-info-container {
   width: 30vw;
   height: 700px;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 #project-info-container h1 {
-  margin-bottom: 60px;
   color: var(--color-main-background)
+}
+
+#project-info-container p {
+  color: var(--color-jet-black);
+  font-size: 22px;
+  line-height: 33px;  
+  margin-bottom: 18px;
 }
 
 #project-info-container h2 {
   color: var(--color-main-background);
-  margin-top: 60px;
-} 
-
-#project-card {
-  width: 400px;
-  height: 350px;
-  border-radius: 20px;
-  margin: 10px;
-  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+  margin-top: 50px;
 }
 
+.resume-btn {
+  text-decoration: none;
+  background-color: var(--color-main-background);
+  padding: 8px 13px;
+  color: var(--color-light);
+  text-transform: lowercase;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.6) 2px 2px 4px;
+}
+
+.resume-btn:hover {
+  color: var(--accent-color);
+  background-color: var(--color-light);
+}
 
 #project-list-container {
   display: flex;
   flex-wrap: wrap;
   overflow: scroll;
   width: 62vw;
-  max-height: 800px;
+  max-height: calc(100vh - 100px);
   justify-content: end;
   margin-top: 20px;
 }
+
+/* ICON LIST COMPONENT */
 
 #icon-list img {
   margin: 5px;
   width: 40px;
   height: 40px;
+}
+
+/* CONTACT SECTION */
+
+#contact-detail-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-detail-section img {
+  height: 60px;
+	width: 60px;
+  filter: invert(100%);
+	padding: 2px;
+  margin: 0 10px;  
+}
+
+#contact-detail-section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
 }
 
 @keyframes fadeIn {
@@ -102,18 +133,102 @@ p {
   }
 }
 
-/* rotating logo effect */
-/* @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width:1000px) {
+  
+  #project-info-container > p {
+    font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
-  } */
 
+} 
 
-/* @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media only screen and (max-width: 900px) {
+  #icon-list img {
+    margin: 5px;
+    margin-bottom: 40px;
+    width: 20px;
+    height: 20px;
   }
-} */
+
+  #contact-form {
+    width: 80vw;
+  }
+
+  #contact-detail-section {
+    margin-left: 20px;
+  }
+
+  #contact-detail-section img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 20px;
+  }
+
+  #contact-detail-section h1 {
+    font-size: 30px;
+    margin-top: 20;
+    margin-bottom: 20px;
+  }
+
+  #project-info-container h1 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  #greeting-sub-text {
+    display: block;
+  }
+
+  h1#greeting {
+    margin-top: -30px;
+    font-size: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #greeting-text h2 {
+    font-size: 20px;
+  }
+
+  #project-info-container {
+    height: 0px;
+    margin-top: 50px;
+    width: calc(100vw - 60px);
+    padding: 0 40px;
+
+  }
+
+  #project-info-container > p {
+    font-size: 16px;
+  }
+
+  #project-info-container h1 {
+    margin-bottom: 50px;
+  }
+
+  #project-info-container h2 {
+    font-size: 12px;
+    margin-top: 50px;
+  }
+
+  #project-list-container {
+    width: 100%;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  #project-section {
+    overflow: scroll;
+  }
+
+  #contact-form {
+    width: 100vw;
+  }
+
+  #contact-detail-section {
+    height: 30vh;
+    margin: 0;
+  }
+
+}

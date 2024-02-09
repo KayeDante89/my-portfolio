@@ -11,7 +11,7 @@ html,body {
   --accent-color: #b5838d;
   --color-light: #F3DBCE;
 	--bold: 700;
-  --page-height: calc( 100vh - 60px );
+  --page-height: calc( 100vh - 40px );
   font-family: 'League Spartan', sans-serif;
 }
 
@@ -43,3 +43,20 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (max-width: 800px) {
+  
+} 
+
+@media only screen and (max-width: 700px) {
+
+  .flex-center {
+    display: block;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  
+}
+  
