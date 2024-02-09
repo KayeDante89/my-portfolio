@@ -1,5 +1,12 @@
 import IconList from "./IconList";
 import ProjectCard from "./project-card";
+import djangoNewsImg from '../assets/djangonews.png';
+import loveLedgerImg from '../assets/loveledger.png';
+import pokemonApiImg from '../assets/pokemon-api.png';
+import portfolioImg1 from '../assets/portfolio1.png';
+import portfolioImg2 from '../assets/portfolio2.png';
+import skillsWorkshopImg from '../assets/skills-workshop.png';
+import resumePdf from '../assets/kaye-resume-24.pdf';
 
 export default function Projects() {
   return (
@@ -18,7 +25,7 @@ export default function Projects() {
         </p>
           <a
           className="resume-btn"
-          href="/public/kaye-resume-24.pdf"
+          href={resumePdf}
           title="Resume"
           download
         >
@@ -30,34 +37,34 @@ export default function Projects() {
       </div>
       <div id="project-list-container">
         <ProjectCard
-          img={"/src/assets/loveledger.png"}
+          img={loveLedgerImg}
           title={"Crowdfund Project"}
           link={"https://loveledger.netlify.app/"}
         />
         <ProjectCard
-          img={"/src/assets/djangonews.png"}
+          img={djangoNewsImg}
           title={"Django News Project"}
           link={
             "https://github.com/KayeDante89/she-codes-django-news-project-KayeDante89"
           }
         />
         <ProjectCard
-          img={"/src/assets/skills-workshop.png"}
+          img={skillsWorkshopImg}
           title={"She Codes Group Project"}
           link={"https://skillsworkshop.netlify.app/"}
         />
         <ProjectCard
-          img={"/src/assets/portfolio1.png"}
+          img={portfolioImg1}
           title={"Online Portfolio 2022"}
           link={"https://kayedante89.github.io/"}
         />
         <ProjectCard
-          img={"/src/assets/portfolio2.png"}
+          img={portfolioImg2}
           title={"Online Portfolio 2023"}
           link={"https://kayedante89.github.io/mywebsite"}
         />
         <ProjectCard
-          img={"/src/assets/pokemon-api.png"}
+          img={pokemonApiImg}
           title={"Pokemon Search App"}
           link={"https://github.com/KayeDante89/pokemon-search-app"}
         />
