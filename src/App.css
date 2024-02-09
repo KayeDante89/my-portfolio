@@ -4,12 +4,27 @@ div#home-section {
   margin: 0 auto;
 }
 
+#greeting-text {
+  position: fixed;
+  top: 180px;
+  right: 0px;
+  z-index: -1;
+  width: 100%;
+}
 
 h1#greeting {
+  margin-top: 160px;
+  margin-bottom: 60px;
   font-size: 140px;
-  margin: 40px;
   color: var(--color-light);
   -webkit-animation: fadeIn 1.5s;
+}
+
+p {
+  color: var(--color-jet-black);
+  font-size: 22px;
+  margin-top: 10px;
+  line-height: 33px;  
 }
 
 .home-text-container {
@@ -40,14 +55,24 @@ h1#greeting {
 #project-info-container {
   width: 30vw;
   height: 700px;
+  padding-left: 20px;
 }
+
+#project-info-container h1 {
+  margin-bottom: 60px;
+  color: var(--color-main-background)
+}
+
+#project-info-container h2 {
+  color: var(--color-main-background);
+  margin-top: 60px;
+} 
 
 #project-card {
   width: 400px;
   height: 350px;
   border-radius: 20px;
   margin: 10px;
-  /* border: 0.5px solid var(--accent-color); */
   box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
 }
 
@@ -56,10 +81,16 @@ h1#greeting {
   display: flex;
   flex-wrap: wrap;
   overflow: scroll;
-  width: 60vw;
+  width: 62vw;
   max-height: 800px;
-  justify-content: center;
+  justify-content: end;
   margin-top: 20px;
+}
+
+#icon-list img {
+  margin: 5px;
+  width: 40px;
+  height: 40px;
 }
 
 @keyframes fadeIn {
