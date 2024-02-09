@@ -6,7 +6,7 @@ import pokemonApiImg from '../assets/pokemon-api.png';
 import portfolioImg1 from '../assets/portfolio1.png';
 import portfolioImg2 from '../assets/portfolio2.png';
 import skillsWorkshopImg from '../assets/skills-workshop.png';
-import resumePdf from '../assets/kaye-resume-24.pdf';
+import resumePdf from '../assets/kresume.pdf';
 
 export default function Projects() {
   return (
