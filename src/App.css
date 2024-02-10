@@ -136,7 +136,7 @@ h1#greeting {
 @media only screen and (max-width:1000px) {
   
   #project-info-container > p {
-    font-size: 18px;
+    font-size: 20px;
   }
 
 } 
@@ -200,7 +200,7 @@ h1#greeting {
   }
 
   #project-info-container > p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   #project-info-container h1 {
