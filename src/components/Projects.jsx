@@ -7,6 +7,7 @@ import portfolioImg1 from '../assets/portfolio1.png';
 import portfolioImg2 from '../assets/portfolio2.png';
 import skillsWorkshopImg from '../assets/skills-workshop.png';
 import resumePdf from '../assets/kresume.pdf';
+import dictionaryImg from '../assets/dictionary-app.png';
 
 export default function Projects() {
   return (
@@ -68,7 +69,10 @@ export default function Projects() {
           title={"Pokemon Search App"}
           link={"https://github.com/KayeDante89/pokemon-search-app"}
         />
-        <ProjectCard title={"Coming soon.."} />
+        <ProjectCard
+          img={dictionaryImg}
+          title={"Dictionary App"}
+          link={"https://github.com/KayeDante89/react-snippets"} />
         <ProjectCard title={"Coming soon.."} />
       </div>
     </div>
