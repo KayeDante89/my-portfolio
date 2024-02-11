@@ -1,7 +1,7 @@
 #footer-section {
 	margin: 0;
 	background-color: #343434;
-	height: 50px;
+	height: 30px;
 	bottom: 0;
 	color: var(--accent-color);
 	display: flex;
@@ -9,9 +9,12 @@
 	align-items: center;
 }
 
+#footer-section p {
+	margin-top: 5px;
+}
+
 @media only screen and (max-width: 700px) {
 	#footer-section {
-		height: 30px;
 		font-size: 12px;
 	}
 }

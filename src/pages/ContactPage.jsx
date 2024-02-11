@@ -2,7 +2,7 @@ import ContactForm from "../components/contact-form";
 
 export default function ContactPage() {
   return (
-    <div className="flex-center">
+    <main className="flex-center">
       <section id="contact-detail-section">
         <div style={{ textAlign: "center" }}>
           <h1>Let's Connect</h1>
@@ -19,6 +19,6 @@ export default function ContactPage() {
       <section id="contact-form" className="page-height">
         <ContactForm />
       </section>
-    </div>
+    </main>
   );
 }

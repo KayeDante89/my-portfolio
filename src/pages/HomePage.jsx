@@ -2,7 +2,7 @@ import Projects from "../components/Projects";
 
 export default function HomePage() {
   return (
-    <div>
+    <main>
       <section id="home-section" className="page-height flex-center">
         <div id="greeting-text">
           <h1 id="greeting">
@@ -18,6 +18,6 @@ export default function HomePage() {
       <section id="project-section" className="page-height">
         <Projects/>
       </section>
-    </div>
+    </main>
   );
 }
